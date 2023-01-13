@@ -1,10 +1,10 @@
 # GC/Wii Splitting and You: A Primer
 
-##Preface
+## Preface
 
 If the game you are decompiling has a symbol map or an .elf file, or if a very similar game code wise has one of the two, you probably don't need to use this guide. In that case, I would recommend using mapdas to make use of the symbol map if it has one, and any elf disassembling tool if the game has an .elf file.
 
-##Introduction
+## Introduction
 
 When beginning a decompilation of any kind, one of the things that people bemoan working on the most but nonetheless is the most important thing to do before anything is splitting. Without splitting the massive code file that you start out with, labeling functions, decompiling files, and reverse engineering all become much harder. On top of the file being hard to edit and navigate through, not having established file boundaries makes it way hard to not only label and split data sections correctly, but also to actually decompile files, which depend on all of the other things being done properly.
 
