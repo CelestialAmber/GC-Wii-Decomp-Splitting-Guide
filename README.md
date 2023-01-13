@@ -1,6 +1,12 @@
 # GC/Wii Splitting and You: A Primer
 
-When beginning a decompilation of any kind, the thing that people bemoan working on but nonetheless the most important thing to do before anything is splitting. Without splitting the massive code file that you start out with, labeling functions, decompiling files, and reverse engineering all become much harder. On top of the file being hard to edit and navigate through, not having established file boundaries makes it way hard to not only label and split data sections correctly, but also to actually decompile files, which depend on all of the other things being done properly.
+##Preface
+
+If the game you are decompiling has a symbol map or an .elf file, or if a very similar game code wise has one of the two, you probably don't need to use this guide. In that case, I would recommend using mapdas to make use of the symbol map if it has one, and any elf disassembling tool if the game has an .elf file.
+
+##Introduction
+
+When beginning a decompilation of any kind, one of the things that people bemoan working on the most but nonetheless is the most important thing to do before anything is splitting. Without splitting the massive code file that you start out with, labeling functions, decompiling files, and reverse engineering all become much harder. On top of the file being hard to edit and navigate through, not having established file boundaries makes it way hard to not only label and split data sections correctly, but also to actually decompile files, which depend on all of the other things being done properly.
 
 For GC/Wii specifically, this entails splitting up the init and text sections (which contain the game's code) into separate files, and splitting up the different data sections (rodata, data, bss, etc...) into each of those files based on where they get used (there are some exceptions to this which I will address later)
 
@@ -31,13 +37,13 @@ Once you find out what other libraries it uses (including in-house libraries suc
 
 Same as above, you want to find where each library starts and ends, and split each into their own file.
 
-### **3)Splitting/labeling a file**
+### **3) Splitting/labeling a file**
 
 Once you've separated the code into the different libraries you've identified in the code, the next step is to split them into all the separate files the code was originally in.
 
 After splitting each file, you then want to split the data sections according to each file you split. If you want, you can do this after splitting all the code.
 
-### **4)Splitting data**
+### **4) Splitting data**
 
 To be written.
 
