@@ -2,7 +2,7 @@
 
 ## Preface
 
-If the game you are decompiling has a symbol map or an .elf file, or if a very similar game code wise has one of the two, you probably don't need to use this guide. In that case, I would recommend using mapdas to make use of the symbol map if it has one, and any elf disassembling tool if the game has an .elf file.
+If the game you are decompiling has a symbol map or an .elf file, or if a very similar game code wise has one of the two, you probably don't need to use this guide. In that case, I would recommend using [mapdas](https://github.com/intns/mapdas) to make use of the symbol map if it has one, and any elf disassembling tool if the game has an .elf file.
 
 ## Introduction
 
